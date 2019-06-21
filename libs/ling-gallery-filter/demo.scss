@@ -1,0 +1,144 @@
+
+$text_color: #23272a;
+$font_size: 0.875rem;
+$header_bg_color: #e4e4e4;
+
+
+*, *::before, *::after {
+  box-sizing: border-box
+}
+
+html {
+  font-family: sans-serif;
+  line-height: 1.15;
+}
+
+
+body {
+  display: flex;
+  display: -ms-flexbox;
+  flex-direction: column;
+  min-height: 100vh;
+  font-size: $font_size;
+  color: $text_color;
+  background-color: $header_bg_color;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+}
+
+
+/*------------------------------------
+- UTILS
+------------------------------------*/
+.btn-white {
+  color: #595959;
+  background-color: white;
+  border-color: #cfcfcf;
+
+  &:hover {
+    border-color: #888;
+  }
+}
+
+.btn-xs {
+  font-size: 0.7rem;
+  padding: 0.2rem 0.4rem;
+}
+
+
+
+
+/*------------------------------------
+-
+------------------------------------*/
+.widget-usermanag-filemanager {
+  color: #444;
+
+  .filter-links {
+    a {
+      font-size: 10px;
+      background-color: white;
+      padding: 5px 12px;
+      color: inherit;
+      border-radius: 2px;
+      border: 1px solid #ccc;
+      margin-right: 5px;
+      margin-bottom: 5px;
+      display: inline-block;
+
+      &:hover {
+        border: 1px solid #777;
+      }
+    }
+  }
+
+  .folder-list {
+    li {
+      border-bottom: 1px solid #e7eaec;
+      display: block;
+
+      a {
+        color: #363636;
+        display: block;
+        padding: 5px 0;
+        font-size: 13px;
+
+        i {
+          margin-right: 4px;
+        }
+      }
+    }
+  }
+
+
+  .tag-list li {
+
+    a {
+
+      font-size: 10px;
+      background-color: #f3f3f4;
+      padding: 5px 12px;
+      color: inherit;
+      border-radius: 2px;
+      border: 1px solid #e7eaec;
+      margin-right: 5px;
+      margin-top: 5px;
+      display: block;
+
+      &:hover {
+        color: #333;
+        background: #e3e3e3;
+        border-color: #ccc;
+      }
+
+    }
+  }
+
+  .files-list {
+
+    .file-icon {
+      color: #cfcfcf;
+    }
+
+
+    .card{
+      margin-bottom: 15px;
+    }
+    .card-img-top {
+      position: relative;
+
+      &.with-icon {
+        height: 160px;
+      }
+
+
+    }
+
+  }
+}
+
+
+
+
+
